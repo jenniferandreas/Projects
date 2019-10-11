@@ -1,0 +1,83 @@
+/*about us*/
+
+
+.content
+{
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.content h1
+{
+	font-size: 25px;
+	text-align: left;
+	color: black;
+
+}
+.content h3
+{
+	font-size: 20px;
+	text-align: left;
+	color: black;
+
+}
+.content p
+{
+	font-size: 20px;
+	text-align: left;
+	color: black;
+	font:bold;
+}
+
+.content2{
+    position: static;
+    width: 100%;
+    min-height: 100%;
+    margin: 30px auto;
+}
+
+.content2 img{
+    width: 50%;
+    height: 320px;
+    position: relative;
+}
+
+.content2 .box{
+    position: relative;
+    width: calc(400px-30px);
+    height: calc(400px-30px);
+    background-color: #ffc9b9;
+    float: left;
+    margin: 70px;
+    overflow: hidden;
+    opacity: 0.7;
+}
+
+.content2 h2{
+    text-shadow: 1.5px 1.5px 1px rgb(63, 47, 44);
+    color: white;
+    padding: 3px;
+    margin: 3px;
+}
+
+.content2 p{
+    margin: 10px;
+    padding: 70px;
+    text-align: justify;
+    font-size: 20px;
+    color: black;
+}
+
+.shipment
+{
+	justify-content: space-around;
+	width: 200px;
+	height: 50px;
+	display: inline-block;
+	margin-left: 0px;
+	margin-right: 15%;
+	margin-top: 30px;
+	opacity: 0.78;
+
+}

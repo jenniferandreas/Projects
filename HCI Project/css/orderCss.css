@@ -1,0 +1,52 @@
+.content>h1
+{
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+}
+
+.content a
+{
+	color: white;
+	text-align: center;
+}
+
+.content a:hover
+{
+	color: black;
+}
+
+.image-content
+{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	opacity: 0.6;
+}
+
+.image1
+{
+	width: 100px;
+	height: 80px;
+	margin-right: 25px;
+}
+
+.image2
+{
+	height: 80px;
+	width: 100px;
+	margin-right: 10px;
+}
+
+.image3
+{
+	width: : 130px;
+	height: 100px;
+	margin-right: -10px;
+}
+
+.image4
+{
+	height: 100px;
+	width: 150px;
+}

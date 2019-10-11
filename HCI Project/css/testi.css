@@ -1,0 +1,134 @@
+section
+{
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  margin-top: -40px;
+}
+
+section h1
+{
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;  
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.testi input[type="text"], textarea
+{
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid rgb(255,201,185);
+  padding: 14px 10px;
+  width: 400px;
+  outline: none;
+  border-radius: 24px;
+  text-shadow: 2px 2px 4px #000000;
+  font-weight: 1000;
+}
+
+.testi input[type="text"]:focus, textarea:focus
+{
+  transition: 0.5s;
+  width: 500px;
+  border-color: black;  
+}
+
+.container
+{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.rating {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  font-size: 50px;
+}
+
+.rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rating label:last-child {
+  position: static;
+}
+
+.rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+.rating label:last-child .icon {
+  color: #ffffff;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+  color: #ffff00;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: #ffffff;
+  text-shadow: 0 0 5px #ffff00;
+}
+
+.testi input[type="submit"]
+{
+  background: rgb(255,201,185);
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid white;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  border-radius: 24px;
+  color: white;
+  font-weight: 1000;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px #000000;
+  transition: 0.5s;
+}
+
+.testi input[type="submit"]:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}

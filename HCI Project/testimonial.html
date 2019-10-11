@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testimonial</title>
+	<link rel="stylesheet" type="text/css" href="css/header&footer.css">
+	<link rel="stylesheet" type="text/css" href="css/testi.css">
+	<link rel="icon" type="image/png" href="image/final.png">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8">	    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="home.html">
+				<img src="image/logo.png">
+			</a>
+		</div>
+		<div class="title">
+			<h1>
+				YOU TRUST, WE SERVE
+			</h1>
+		</div>
+	</header>
+
+	<nav>
+		<ul class="nav-bar">
+			<li>
+				<a href="home.html">HOME</a>	
+			</li>
+			<li>
+				<a href="aboutUs.html">ABOUT US</a>
+			</li>
+			<li class="dropdown">
+				<a href="#">PRODUCT</a>
+				<ul class="dropdown-content">
+					<li>
+						<a href="food.html">FOOD</a>
+					</li>
+					<li>
+						<a href="medicine.html">MEDICINE</a>
+					</li>
+				</ul>				
+			</li>
+			<li>
+				<a href="howtoorder.html">HOW TO ORDER</a>
+			</li>
+			<li>
+				<a href="testimonial.html">TESTIMONIAL</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<section>
+		<h1>Testimoni</h1>
+		<form class="testi" action="">
+	        <input type="text" placeholder="Name" id="name">   
+	        <input type="text" name="" id="email" placeholder="E-mail"> 
+	        <label class="container">
+	        	Rating
+	        </label> 
+	        <br>      
+	        <div class="rating">
+				<label>
+					<input type="radio" name="stars" value="1" id="one-star" />
+					<span class="icon">★</span>
+				</label>
+				<label>
+					<input type="radio" name="stars" value="2" id="two-star" />
+					<span class="icon">★</span>
+					<span class="icon">★</span>
+				</label>
+				<label>
+					<input type="radio" name="stars" value="3" id="three-star" />
+					<span class="icon">★</span>
+					<span class="icon">★</span>
+					<span class="icon">★</span>  
+				</label>
+				<label>
+					<input type="radio" name="stars" value="4" id="four-star" />
+					<span class="icon">★</span>
+					<span class="icon">★</span>
+					<span class="icon">★</span>
+					<span class="icon">★</span>
+				</label>
+				<label>
+					<input type="radio" name="stars" value="5" id="five-star" />
+					<span class="icon">★</span>
+					<span class="icon">★</span>
+					<span class="icon">★</span>
+					<span class="icon">★</span>
+					<span class="icon">★</span>
+				</label>
+	        </div>   
+	        <br>
+	        <textarea rows="4" cols="50" id="comment" placeholder="Comment"></textarea>
+	        <input type="checkbox" name="" id="agree">
+	        <label class="container" for="agree">Agree With Terms and Conditions</label>
+	        <input type="submit" value="Submit">
+		</form>
+	</section>
+
+	<footer>
+		<h1>© 2019 POwithV Company. All Rights Reserved.</h1>		
+	</footer>
+
+	<script src="js/testimoni.js"></script>
+</body>
+</html>

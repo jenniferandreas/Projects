@@ -1,0 +1,177 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	background: linear-gradient(rgb(208,226,236), rgb(202, 190, 200));
+	font-family: 'CustomFont','Rockwell';
+	text-align: center;
+
+}
+@font-face {
+    font-family: 'Rockwell';
+    src: url('font/Rockwell-ExtraBold.woff2') format('woff2'),
+        url('font/Rockwell-ExtraBold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+::placeholder {
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
+
+/*media rule*/
+
+@media only screen and (max-width : 600px)
+{
+    .content, header, .nav-bar
+    {
+    	flex-direction: column;
+    	margin: auto;
+    }    
+
+    .logo
+    {
+    	align-self: center;
+    	width: 50%;
+    	height: 50%;   	
+    }
+
+    .title
+    {
+    	display: none;
+    }
+
+}
+
+/*header*/
+
+header
+{
+	background-color: #ffc9b9;
+	padding: 14px 0px 20px 0;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 997;
+	display: flex;
+	justify-content: center;	
+}
+
+
+.logo
+{
+	flex: 1;	
+}
+
+.logo img
+{
+	width: 300px;
+	height: 140px;
+}	
+
+.title
+{	
+	align-self: center;
+	flex: 4;
+}
+
+.title h1
+{
+	text-align: center;
+	font-family: 'CustomFont','Rockwell';
+	font-weight: 1000;
+	color: white;
+	font-size: 40px;
+}
+
+.nav-bar
+{
+	background-color: #eeebdc;
+	font-size: 25px;
+	overflow: hidden;
+	margin-bottom: 100px;
+	display: flex;
+	justify-content: space-around;
+}
+
+ul
+{
+	list-style: none;
+}
+
+ul li a 
+{
+	color: black;
+	text-decoration: none;
+	display: block;
+	padding: 14px 16px;
+	min-width: 150px;
+	text-align: center;
+	font-weight: 1000;
+	font-size: 25px;
+}
+
+.nav-bar a:hover, .dropdown:hover
+{
+	color: red;
+}
+
+.dropdown
+{
+	overflow: hidden;
+}
+
+.dropdown-content
+{
+	position: absolute;
+	display: none;
+	background-color: rgb(238,235,220);
+	transition: 1s;
+}
+
+.dropdown:hover .dropdown-content
+{
+	display: block;
+}
+
+.dropdown-content li
+{
+	color: black;
+	display: block;
+	text-align: center;
+}
+
+.content
+{
+	position: relative;
+	margin: auto;
+	max-width: 1000px;
+}
+
+/*footer*/
+
+footer>h1
+{
+	background-color: #d9d1cf;
+	margin-top: 60px;
+	bottom: 0;
+	font-size: 20px;
+	font-family: 'CustomFont','Rockwell';
+	font-weight: 0;
+	text-align: center;
+	padding: 35px;
+	position: static;
+}
